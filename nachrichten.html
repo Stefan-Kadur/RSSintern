@@ -5,45 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kadur News intern!</title>
     <style>
-        /* Hintergrund und Schriftfarbe */
+        /* Einheitliche Schriftart und Hintergrund */
         body { 
             font-family: Arial, sans-serif; 
             position: relative;
-            background: linear-gradient(to bottom, #FFFFFF 33%, #008800 100%); /* Weißes Drittel, dann Grün-Verlauf */
+            background: linear-gradient(to bottom, #FFFFFF 33%, #008800 100%);
             background-attachment: fixed; /* Statischer Hintergrund */
             color: #000000; /* Schwarze Schriftfarbe */
             margin: 0;
             padding: 0;
         }
         
-        /* Logo oben rechts */
-        .logo {
+        /* Logo und Header fixieren */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Halbtransparenter Hintergrund für bessere Lesbarkeit */
+            border-bottom: 2px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefe */
+        }
+
+        .header img {
             position: absolute;
-            top: 20px;
+            top: 10px;
             right: 20px;
             max-width: 150px;
             height: auto;
         }
-        
-        /* Überschrift und Beschreibung zentrieren */
-        .header {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Halbtransparenter Hintergrund für bessere Lesbarkeit */
-            border-radius: 8px;
+
+        .header h1, .header p {
+            margin: 0;
+        }
+
+        /* Platz schaffen unter dem fixierten Header */
+        .content {
+            padding-top: 140px; /* Platz für den fixierten Header */
         }
 
         /* Nachrichtenabschnitte mit Milchglas-Effekt */
         .nachricht { 
             margin: 20px auto; 
-            padding: 15px; 
+            padding: 20px; 
             border-radius: 8px; 
             background-color: rgba(255, 255, 255, 0.8); /* Halbtransparenter weißer Hintergrund */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leichter Schatten für Tiefe */
             backdrop-filter: blur(5px); /* Weichzeichner-Effekt */
             -webkit-backdrop-filter: blur(5px); /* Unterstützung für Safari */
             max-width: 800px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Einheitliche Überschrift in den Nachrichtenabschnitten */
+        .nachricht h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #000000;
+            margin-top: 0;
         }
 
         .nachricht img { 
@@ -52,62 +74,57 @@
             border-radius: 5px; 
         }
 
+        /* Einheitliche Formatierung für Datumsangaben */
         .datum { 
             font-size: 0.9em; 
-            color: #000000; /* Schwarze Schrift für Datumsangaben */
+            color: #666; 
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Firmenlogo oben rechts -->
-    <img src="https://stefan-kadur.github.io/RSSintern/KADUR_Gruppe.jpg" alt="KADUR Gruppe Logo" class="logo">
-
-    <!-- Überschrift und Beschreibung zentriert -->
+    <!-- Kopf der Seite mit fixiertem Logo und Überschrift -->
     <div class="header">
+        <img src="https://stefan-kadur.github.io/RSSintern/KADUR_Gruppe.jpg" alt="KADUR Gruppe Logo">
         <h1>Interne Nachrichten der KADUR Gruppe</h1>
         <p>Hier finden Sie die neuesten Nachrichten und Ankündigungen.</p>
     </div>
 
-    <!-- Nachrichten-Abschnitt -->
-    <div class="nachricht" id="nachricht-0">
-        <p><strong>Der interne Nachrichten Kanal der KADUR Gruppe geht online</strong></p>
-        <p>&nbsp;</p>
-        <p>Liebe Kolleginnen und Kollegen,</p>
-        <p>wir freuen uns, euch mitteilen zu k&ouml;nnen, dass wir nun ein internes Informationsmedium eingerichtet haben! Ab sofort findet ihr alle wichtigen Nachrichten im CRM. F&uuml;r eine noch bequemere Nutzung k&ouml;nnt ihr die Nachrichten auch &uuml;ber jeden RSS-Reader abonnieren, z. B. in Outlook.</p>
-        <p>Die Adresse des Feeds lautet: <a href="https://stefan-kadur.github.io/RSSintern/feed.xml">https://stefan-kadur.github.io/RSSintern/feed.xml</a></p>
-        <p>&nbsp;</p>
-        <p>Beste Gr&uuml;&szlig;e</p>
-        <p>Euer F&uuml;hrungs-Team</p>
-    </div>
-    <div class="nachricht" id="nachricht-1">
-        <h2>Wichtige Änderung der Urlaubsregelung an Weihnachten und Silvester</h2>
-        <p class="datum">Veröffentlicht am: 02. November 2024</p>
+    <!-- Inhaltsbereich -->
+    <div class="content">
+        <div class="nachricht" id="nachricht-0">
+            <h2>Der interne Nachrichten Kanal der KADUR Gruppe geht online</h2>
+            <p class="datum">Veröffentlicht am: 02. November 2024</p>
+            <p>Liebe Kolleginnen und Kollegen,</p>
+            <p>Wir freuen uns, euch mitteilen zu k&ouml;nnen, dass wir nun ein internes Informationsmedium eingerichtet haben! Ab sofort findet ihr alle wichtigen Nachrichten im CRM. F&uuml;r eine noch bequemere Nutzung k&ouml;nnt ihr die Nachrichten auch &uuml;ber jeden RSS-Reader abonnieren, z. B. in Outlook.</p>
+            <p>Die Adresse des Feeds lautet: <a href="https://stefan-kadur.github.io/RSSintern/feed.xml">https://stefan-kadur.github.io/RSSintern/feed.xml</a></p>
+            <p>Beste Gr&uuml;&szlig;e,</p>
+            <p>Euer F&uuml;hrungs-Team</p>
+        </div>
 
-        <p>Liebe Mitarbeiterinnen und Mitarbeiter,</p>
-        <p>&nbsp;</p>
-        <p>Wir möchten Sie über eine wichtige Änderung bezüglich der Urlaubsregelung an Weihnachten und Silvester informieren.</p>
-        <p>Ab diesem Jahr gilt folgende Regelung:</p>
-        <p>&nbsp;</p>
-        <p><strong>Halbe Urlaubstage an Weihnachten und Silvester</strong></p>
-        <ul>
-            <li>Weihnachten: Am 24. Dezember (Heiligabend) wird nur noch ein halber Urlaubstag in Anspruch genommen.</li>
-            <li>Silvester: Am 31. Dezember (Silvester) wird ebenfalls nur noch ein halber Urlaubstag in Anspruch genommen.</li>
-        </ul>
-        <p>&nbsp;</p>
-        <p>Diese Anpassung ermöglicht es Ihnen, die Feiertage besser zu genießen und gleichzeitig Ihre Urlaubstage effizienter zu nutzen.</p>
-        <p>Dies ist eine interne Vereinbarung innerhalb unseres Unternehmens und kommt Ihnen als Mitarbeiterinnen und Mitarbeiter zugute.</p>
-        <p>Sollten Sie Fragen oder Unklarheiten haben, wenden Sie sich bitte an die Personalabteilung.</p>
-        <p>&nbsp;</p>
-        <p><u>Wichtige Hinweise:</u></p>
-        <ul>
-            <li>Die Regelung stellt eine freiwillige Leistung dar und begründet keinen Anspruch für die Zukunft.</li>
-            <li>Eine zusätzliche Vergütung erfolgt nicht und die regulären Arbeitszeitregelungen bleiben bestehen.</li>
-        </ul>
-        <p>&nbsp;</p>
-        <p>Freundliche Grüße</p>
-        <p>&nbsp;</p>
-        <p>Euer Führungs-Team</p>
+        <div class="nachricht" id="nachricht-1">
+            <h2>Wichtige Änderung der Urlaubsregelung an Weihnachten und Silvester</h2>
+            <p class="datum">Veröffentlicht am: 02. November 2024</p>
+            <p>Liebe Mitarbeiterinnen und Mitarbeiter,</p>
+            <p>Wir möchten Sie über eine wichtige Änderung bezüglich der Urlaubsregelung an Weihnachten und Silvester informieren.</p>
+            <p><strong>Halbe Urlaubstage an Weihnachten und Silvester</strong></p>
+            <ul>
+                <li>Weihnachten: Am 24. Dezember (Heiligabend) wird nur noch ein halber Urlaubstag in Anspruch genommen.</li>
+                <li>Silvester: Am 31. Dezember (Silvester) wird ebenfalls nur noch ein halber Urlaubstag in Anspruch genommen.</li>
+            </ul>
+            <p>Diese Anpassung ermöglicht es Ihnen, die Feiertage besser zu genießen und gleichzeitig Ihre Urlaubstage effizienter zu nutzen.</p>
+            <p>Dies ist eine interne Vereinbarung innerhalb unseres Unternehmens und kommt Ihnen als Mitarbeiterinnen und Mitarbeiter zugute.</p>
+            <p>Sollten Sie Fragen oder Unklarheiten haben, wenden Sie sich bitte an die Personalabteilung.</p>
+            
+            <p><u>Wichtige Hinweise:</u></p>
+            <ul>
+                <li>Die Regelung stellt eine freiwillige Leistung dar und begründet keinen Anspruch für die Zukunft.</li>
+                <li>Eine zusätzliche Vergütung erfolgt nicht und die regulären Arbeitszeitregelungen bleiben bestehen.</li>
+            </ul>
+            <p>Freundliche Grüße,</p>
+            <p>Euer Führungs-Team</p>
+        </div>
     </div>
 
 </body>
