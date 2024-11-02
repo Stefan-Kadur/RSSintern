@@ -84,6 +84,32 @@
             color: #666; 
             margin-bottom: 10px;
         }
+
+        /* Responsive Anpassungen für kleinere Bildschirme */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column; /* Logo und Text untereinander auf kleinen Bildschirmen */
+                padding: 10px;
+            }
+
+            .header img {
+                margin-right: 0; /* Kein Abstand, wenn untereinander */
+                margin-bottom: 10px;
+            }
+
+            .content {
+                padding-top: 180px; /* Mehr Platz für den größeren Header auf kleinen Bildschirmen */
+            }
+
+            .nachricht {
+                padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
+                margin: 15px; /* Weniger Außenabstand auf kleinen Bildschirmen */
+            }
+
+            .nachricht h2 {
+                font-size: 1.3em; /* Kleinere Schriftgröße für Überschriften */
+            }
+        }
     </style>
 </head>
 <body>
