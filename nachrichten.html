@@ -10,7 +10,10 @@
             font-family: Arial, sans-serif; 
             position: relative;
             background: linear-gradient(to bottom, #FFFFFF 33%, #008800 100%); /* Weißes Drittel, dann Grün-Verlauf */
+            background-attachment: fixed; /* Statischer Hintergrund */
             color: #000000; /* Schwarze Schriftfarbe */
+            margin: 0;
+            padding: 0;
         }
         
         /* Logo oben rechts */
@@ -26,17 +29,21 @@
         .header {
             text-align: center;
             margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Halbtransparenter Hintergrund für bessere Lesbarkeit */
+            border-radius: 8px;
         }
 
         /* Nachrichtenabschnitte mit Milchglas-Effekt */
         .nachricht { 
-            margin-bottom: 20px; 
+            margin: 20px auto; 
             padding: 15px; 
             border-radius: 8px; 
             background-color: rgba(255, 255, 255, 0.8); /* Halbtransparenter weißer Hintergrund */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leichter Schatten für Tiefe */
             backdrop-filter: blur(5px); /* Weichzeichner-Effekt */
             -webkit-backdrop-filter: blur(5px); /* Unterstützung für Safari */
+            max-width: 800px;
         }
 
         .nachricht img { 
