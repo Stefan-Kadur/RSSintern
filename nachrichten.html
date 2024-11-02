@@ -16,7 +16,7 @@
             padding: 0;
         }
         
-        /* Logo und Header fixieren */
+        /* Fixierter Header mit weißem Hintergrund */
         .header {
             position: fixed;
             top: 0;
@@ -25,21 +25,25 @@
             z-index: 1000;
             text-align: center;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); /* Halbtransparenter Hintergrund für bessere Lesbarkeit */
+            background-color: #FFFFFF; /* Weißer Hintergrund */
             border-bottom: 2px solid #ddd;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefe */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
+        /* Optimierte Positionierung für das Logo */
         .header img {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            max-width: 150px;
+            max-width: 100px;
             height: auto;
+            margin-right: 20px; /* Abstand zur Überschrift */
         }
 
+        /* Überschrift im Header */
         .header h1, .header p {
             margin: 0;
+            padding: 0;
         }
 
         /* Platz schaffen unter dem fixierten Header */
@@ -87,8 +91,10 @@
     <!-- Kopf der Seite mit fixiertem Logo und Überschrift -->
     <div class="header">
         <img src="https://stefan-kadur.github.io/RSSintern/KADUR_Gruppe.jpg" alt="KADUR Gruppe Logo">
-        <h1>Interne Nachrichten der KADUR Gruppe</h1>
-        <p>Hier finden Sie die neuesten Nachrichten und Ankündigungen.</p>
+        <div>
+            <h1>Interne Nachrichten der KADUR Gruppe</h1>
+            <p>Hier finden Sie die neuesten Nachrichten und Ankündigungen.</p>
+        </div>
     </div>
 
     <!-- Inhaltsbereich -->
