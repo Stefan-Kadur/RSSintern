@@ -5,33 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kadur News intern!</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: rgb(255,255,255);
-            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(22,111,33,1) 100%);
-        }
-        .nachricht {
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: rgba(255, 255, 255, 0.8); /* Heller Hintergrund für Nachrichten */
-        }
-        .nachricht img {
-            max-width: 100%;
+        body { font-family: Arial, sans-serif; position: relative; }
+        
+        /* Logo oben rechts */
+        .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            max-width: 150px;
             height: auto;
-            border-radius: 5px;
         }
-        .datum {
-            font-size: 0.9em;
-            color: #666;
+        
+        /* Überschrift und Beschreibung zentrieren */
+        .header {
+            text-align: center;
+            margin-top: 50px;
         }
+
+        .nachricht { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
+        .nachricht img { max-width: 100%; height: auto; border-radius: 5px; }
+        .datum { font-size: 0.9em; color: #666; }
     </style>
 </head>
 <body>
-    <h1>Interne Nachrichten der KADUR Gruppe</h1>
-    <p>Hier finden Sie die neuesten Nachrichten und Ankündigungen.</p>
+
+    <!-- Firmenlogo oben rechts -->
+    <img src="https://stefan-kadur.github.io/RSSintern/KADUR_Gruppe.jpg" alt="KADUR Gruppe Logo" class="logo">
+
+    <!-- Überschrift und Beschreibung zentriert -->
+    <div class="header">
+        <h1>Interne Nachrichten der KADUR Gruppe</h1>
+        <p>Hier finden Sie die neuesten Nachrichten und Ankündigungen.</p>
+    </div>
 
     <!-- Nachrichten-Abschnitt -->
     <div class="nachricht" id="nachricht-0">
-        <p><strong>Der interne Nachrichten Kanal der KADUR Gruppe geht o
+        <p><strong>Der interne Nachrichten Kanal der KADUR Gruppe geht online</strong></p>
+        <p>&nbsp;</p>
+        <p>Liebe Kolleginnen und Kollegen,</p>
+        <p>wir freuen uns, euch mitteilen zu k&ouml;nnen, dass wir nun ein internes Informationsmedium eingerichtet haben! Ab sofort findet ihr alle wichtigen Nachrichten im CRM. F&uuml;r eine noch bequemere Nutzung k&ouml;nnt ihr die Nachrichten auch &uuml;ber jeden RSS-Reader abonnieren, z. B. in Outlook.</p>
+        <p>Die
