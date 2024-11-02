@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>KADUR News (intern)</title>
+        <link>https://www.kadur-gruppe.de/</link>
+        <description>Auf diesem Channel werdet ihr laufend über Neuigkeiten innerhalb der KADUR Gruppe auf dem Laufenden gehalten. Sämtliche Informationen sind intern, daher bitten wir um Diskretion und Vertraulichkeit bezüglich der Inhalte.</description>
+        <language>de-DE</language>
+        <pubDate>Sat, 02 Nov 2024 08:00:00 +0100</pubDate>
+        
+        <!-- Einzelnachricht / Artikel -->
+        <item>
+            <title>Unser interner RSS Feed geht online.</title>
+            <link>https://www.kadur-gruppe.de/</link>
+            <description>Ab jetzt werdet ihr über diesen Weg regemläßig Informiert.</description>
+            <author>stefan.luther@kadur-gruppe.de</author>
+            <pubDate>Sat, 02 Nov 2024 09:00:00 +0100</pubDate>
+            <guid>https://www.kadur-gruppe.de/</guid>
+        </item>
+
+        <!-- Weitere Artikel -->
+        <item>
+            <title>Nur nur noch ein halber Urlaubstag für Heiligabend und Sylvester</title>
+            <link>http://www.deinunternehmen.de/news/firmenevent</link>
+            <description>Liebe Mitarbeiterinnen und Mitarbeiter, wir möchten Sie über eine wichtige Änderung bezüglich der Urlaubsregelung an Weihnachten und Silvester informieren.Ab diesem Jahr gilt folgende Regelung:!!! Halbe Urlaubstage an Weihnachten und Silvester" (Die Regelung stellt eine freiwillige Leistung dar und begründet keinen Anspruch für die Zukunft. + •	Eine zusätzliche Vergütung erfolgt nicht und die regulären Arbeitszeitregelungen bleiben bestehen.)
+</description>
+            <author>stefan.luther@kadur-gruppe.de</author>
+            <pubDate>Sat, 02 Nov 2024 10:00:00 +0100</pubDate>
+            <guid>https://www.kadur-gruppe.de/</guid>
+        </item>
+
+    </channel>
+</rss>
