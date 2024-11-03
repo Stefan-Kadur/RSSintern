@@ -10,8 +10,8 @@
             font-family: Arial, sans-serif; 
             position: relative;
             background: linear-gradient(to bottom, #FFFFFF 33%, #008800 100%);
-            background-attachment: fixed; /* Statischer Hintergrund */
-            color: #000000; /* Schwarze Schriftfarbe */
+            background-attachment: fixed;
+            color: #000000;
             margin: 0;
             padding: 0;
         }
@@ -25,30 +25,38 @@
             z-index: 1000;
             text-align: center;
             padding: 20px;
-            background-color: #FFFFFF; /* Weißer Hintergrund */
+            background-color: #FFFFFF;
             border-bottom: 2px solid #ddd;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefe */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 10px; /* Abstand zwischen Logo und Text */
         }
 
-        /* Optimierte Positionierung für das Logo */
+        /* Logo-Stile */
         .header img {
-            max-width: 100px;
+            max-width: 50px; /* Größe des Logos */
             height: auto;
-            margin-right: 20px; /* Abstand zur Überschrift */
         }
 
         /* Überschrift im Header */
-        .header h1, .header p {
+        .header h1 {
+            font-size: 1.5em; /* Gleiche Größe wie Nachrichtenüberschrift */
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header p {
             margin: 0;
             padding: 0;
         }
 
         /* Platz schaffen unter dem fixierten Header */
         .content {
-            padding-top: 140px; /* Platz für den fixierten Header */
+            padding-top: 140px;
         }
 
         /* Nachrichtenabschnitte mit Milchglas-Effekt */
@@ -56,12 +64,11 @@
             margin: 20px auto; 
             padding: 20px; 
             border-radius: 8px; 
-            background-color: rgba(255, 255, 255, 0.8); /* Halbtransparenter weißer Hintergrund */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leichter Schatten für Tiefe */
-            backdrop-filter: blur(5px); /* Weichzeichner-Effekt */
-            -webkit-backdrop-filter: blur(5px); /* Unterstützung für Safari */
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
             max-width: 800px;
-            font-family: Arial, sans-serif;
         }
 
         /* Einheitliche Überschrift in den Nachrichtenabschnitten */
@@ -70,12 +77,6 @@
             font-weight: bold;
             color: #000000;
             margin-top: 0;
-        }
-
-        .nachricht img { 
-            max-width: 100%; 
-            height: auto; 
-            border-radius: 5px; 
         }
 
         /* Einheitliche Formatierung für Datumsangaben */
@@ -88,26 +89,25 @@
         /* Responsive Anpassungen für kleinere Bildschirme */
         @media (max-width: 768px) {
             .header {
-                flex-direction: column; /* Logo und Text untereinander auf kleinen Bildschirmen */
+                flex-direction: column;
                 padding: 10px;
             }
 
             .header img {
-                margin-right: 0; /* Kein Abstand, wenn untereinander */
                 margin-bottom: 10px;
             }
 
             .content {
-                padding-top: 180px; /* Mehr Platz für den größeren Header auf kleinen Bildschirmen */
+                padding-top: 180px;
             }
 
             .nachricht {
-                padding: 15px; /* Weniger Padding auf kleinen Bildschirmen */
-                margin: 15px; /* Weniger Außenabstand auf kleinen Bildschirmen */
+                padding: 15px;
+                margin: 15px;
             }
 
             .nachricht h2 {
-                font-size: 1.3em; /* Kleinere Schriftgröße für Überschriften */
+                font-size: 1.3em;
             }
         }
     </style>
@@ -117,10 +117,8 @@
     <!-- Kopf der Seite mit fixiertem Logo und Überschrift -->
     <div class="header">
         <img src="https://stefan-kadur.github.io/RSSintern/KADUR_Gruppe.jpg" alt="KADUR Gruppe Logo">
-        <div>
-            <h1>Interne Nachrichten der KADUR Gruppe</h1>
-            <p>Hier finden Sie die neuesten Nachrichten und Ankündigungen.</p>
-        </div>
+        <h1>Interne Nachrichten der KADUR Gruppe</h1>
+        <img src="https://stefan-kadur.github.io/RSSintern/KADUR_Gruppe.jpg" alt="KADUR Gruppe Logo">
     </div>
 
     <!-- Inhaltsbereich -->
